@@ -1,0 +1,20 @@
+#FILE(GLOB container_Head_Files ¡°${CMAKE_SOURCE_DIR}/vcg/container/*.h¡±)
+#FILE(GLOB container_Source_Files ¡°${CMAKE_SOURCE_DIR}/vcg/container/*.cpp¡±)
+
+SET(Container_Head
+container_allocation_table.h
+derivation_chain.h
+entries_allocation_table.h
+simple_temporary_data.h
+vector_occ.h
+)
+
+SET(Container_Src
+container_allocation_table.cpp
+derivation_chain.cpp
+entries_allocation_table.cpp
+simple_temporary_data.cpp
+vector_occ.cpp
+)
+
+Add_Library(container ${Container_Head} ${Container_Src})

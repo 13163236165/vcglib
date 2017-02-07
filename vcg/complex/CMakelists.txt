@@ -1,0 +1,19 @@
+
+SET(Complex_Head
+all_types.h
+allocate.h
+append.h
+base.h
+complex.h
+exception.h
+used_types.h
+)
+
+
+SET(Complex_SRC
+allocate.cpp
+append.cpp
+base.cpp
+)
+
+Add_Library(complex ${Complex_Head} ${Complex_SRC})

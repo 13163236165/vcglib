@@ -1,0 +1,86 @@
+
+SET(Edge_Head
+edge/base.h
+edge/component.h
+edge/distance.h
+edge/pos.h
+edge/topology.h
+)
+
+
+SET(Edge_SRC
+edge/base.cpp
+edge/component.cpp
+edge/distance.cpp
+edge/pos.cpp
+edge/topology.cpp
+)
+
+SET(Face_Head
+face/base.h
+face/component.h
+face/component_ep.h
+face/component_occ.h
+face/component_ocf.h
+face/component_polygon.h
+face/distance.h
+face/jumping_pos.h
+face/pos.h
+face/topology.h
+)
+
+SET(FACE_SRC
+face/base.cpp
+face/component.cpp
+face/component_ep.cpp
+face/component_occ.cpp
+face/component_ocf.cpp
+face/component_polygon.cpp
+face/distance.cpp
+face/jumping_pos.cpp
+face/pos.cpp
+face/topology.cpp
+)
+
+SET(Tetra_Head
+tetrahedron/base.h
+tetrahedron/component.h
+tetrahedron/pos.h
+tetrahedron/tetrahedron.h
+)
+
+SET(Tetra_SRC
+tetrahedron/base.cpp
+tetrahedron/component.cpp
+tetrahedron/pos.cpp
+tetrahedron/tetrahedron.cpp
+)
+
+SET(Vertex_Head
+vertex/base.h
+vertex/component.h
+vertex/component_occ.h
+vertex/component_ocf.h
+vertex/component_sph.h
+vertex/distance.h
+)
+
+SET(Vertex_SRC
+vertex/base.cpp
+vertex/component.cpp
+vertex/component_occ.cpp
+vertex/component_ocf.cpp
+vertex/component_sph.cpp
+vertex/distance.cpp
+)
+
+Add_Library(simplex STATIC 
+  ${Vertex_Head} 
+  ${Vertex_SRC}
+  ${Edge_Head} 
+  ${Edge_SRC}
+  ${Face_Head}
+  ${Face_SRC}
+  ${Tetra_Head}
+  ${Tetra_SRC})
+

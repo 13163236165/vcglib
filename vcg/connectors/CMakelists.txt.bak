@@ -1,0 +1,22 @@
+#FILE(GLOB connect_Head_Files ¡°${CMAKE_SOURCE_DIR}/vcg/connectors/*.h¡±)
+#FILE(GLOB connect_Source_Files ¡°${CMAKE_SOURCE_DIR}/vcg/connectors/*.cpp¡±)
+
+
+SET(Connect_Head
+
+
+
+
+)
+
+SET(Connect_SRC
+halfedge_pos.cpp
+
+
+
+
+
+)
+
+
+Add_Library(connectors ${Connect_Head} ${Connect_SRC})

@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.4.0)
+
+Project(vcglib)
+
+Add_Subdirectory(vcg)
+Add_Subdirectory(img)
+#Add_Subdirectory(eigenlib/Eigen)
+#Add_Subdirectory(eigenlib/unsupported)

@@ -1,0 +1,47 @@
+#FILE(GLOB math_Head_Files ¡°${CMAKE_SOURCE_DIR}/vcg/math/*.h¡±)
+#FILE(GLOB math_Source_Files ¡°${CMAKE_SOURCE_DIR}/vcg/math/*.cpp¡±)
+
+SET(Math_Head
+base.h
+camera.h
+disjoint_set.h
+eigen.h
+eigen_matrix_addons.h
+eigen_matrixbase_addons.h
+factorial.h
+gen_normal.h
+histogram.h
+legendre.h
+linear.h
+matrix33.h
+matrix44.h
+old_deprecated_matrix.h
+old_lin_algebra.h
+old_matrix.h
+old_matrix33.h
+old_matrix44.h
+perlin_noise.h
+polar_decomposition.h
+quadric.h
+quadric5.h
+quaternion.h
+random_generator.h
+shot.h
+similarity.h
+similarity2.h
+spherical_harmonics.h
+)
+
+SET(Math_SRC
+camera.cpp
+matrix33.cpp
+matrix44.cpp
+
+
+)
+
+
+
+Add_Library(math ${Math_Head} ${Math_SRC})
+
+
